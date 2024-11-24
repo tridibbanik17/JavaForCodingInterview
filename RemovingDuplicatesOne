@@ -21,6 +21,7 @@ public class RemovingDuplicatesOne {
     public static void main(String[] args) {
         RemovingDuplicatesOne newObj = new RemovingDuplicatesOne();
         int[] inputArray = {1,1,1,2,2,3,3,3};
+        System.out.println("The input integer array is " + inputArray);
         System.out.println("The number of elements after removing the duplicates is " + newObj.duplicateEraser(inputArray) + ".");
     }
 
