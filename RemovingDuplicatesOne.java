@@ -10,14 +10,14 @@ public class RemovingDuplicatesOne {
         if (nums.length == 0)
             return 0;
 
-        int k = 1;
-        for (int num = 1; num < nums.length; num++) {
-            if (nums[num] != nums[k - 1]) {
-                nums[k] = nums[num];
-                k++;
+        int left = 1;
+        for (int right = 1; right < nums.length; right++) {
+            if (nums[right] != nums[left - 1]) {
+                nums[left] = nums[right];
+                left++;
             }
         }
-        return k;
+        return left;
     }
 
     public static void main(String[] args) {
