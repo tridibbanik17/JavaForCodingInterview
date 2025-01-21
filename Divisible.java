@@ -3,10 +3,18 @@ import java.util.Scanner;
 
 /*
  * This program outputs string of integers in a range of 1 to user Input that are divisible by either 3, 5, or both.
+ * Sample inputs and outputs:
+ * Input: 3
+ * Output:  Divided by 3 -> 3
+            Divided by 5 -> No integer found.
+            Divided by 3 and 5 -> No integer found.
+ * Input: 16
+ * Output:  Divided by 3 -> 3, 6, 9, 12, 15.
+            Divided by 5 -> 5, 10, 15.
+            Divided by 3 and 5 -> 15.
  */
 
-//public class definition
-public class Divisible
+class Divisible
 {
     //divisibleByThree() method takes user input as an integer and in a range of 1 and user input it returns all possible integers divisible by 3.
 	private String divisibleByThree(int inputFromUser)
@@ -74,7 +82,6 @@ public class Divisible
 			}
 		}
 
-
 		String finalOutput = newOutputForBoth.replaceFirst(",", "");
         if (finalOutput == "")
         {
@@ -84,7 +91,6 @@ public class Divisible
 		return finalOutput + ".";
 	}
 
-	
 	public static void main(String[] args)
 	{
 		System.out.println("Input an integer and press enter.");
