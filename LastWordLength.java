@@ -21,6 +21,11 @@ import java.util.Scanner;
  */
 
 public class LastWordLength {
+    /**
+     * Method to find the length of the last word in a given string.
+     * @param s The input string
+     * @return The length of the last word
+     */
     public int lengthOfLastWord(String s) {
         // Trim whitespace from both ends of the string
         String trimmedString = s.trim();
