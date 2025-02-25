@@ -21,20 +21,15 @@ import java.util.Scanner;
  */
 
 public class LastWordLength {
-    /**
-     * Method to find the length of the last word in a given string.
-     * @param s The input string
-     * @return The length of the last word
-     */
     public int lengthOfLastWord(String s) {
         // Trim whitespace from both ends of the string
-        String trimmedS = s.trim();
+        String trimmedString = s.trim();
         
         int count = 0;
         
         // Loop from the end of the string until a space is found
-        for (int i = trimmedS.length() - 1; i >= 0; i--) {
-            if (trimmedS.charAt(i) == ' ') {
+        for (int i = trimmedString.length() - 1; i >= 0; i--) {
+            if (trimmedString.charAt(i) == ' ') {
                 break; // Stop when the first space from the right is found
             }
             count++; // Increment count for each character in the last word
